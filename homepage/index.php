@@ -28,7 +28,7 @@ $(document).ready(function() {
 <body>
 	<?php include_once("homepage/analytics.php") ?>
     <? $test=$txt1="Learn PHP";?>
-   	<? include("homepage/header.php"); ?> 
+   	<? include("homepage/header_div.php"); ?> 
     
  <div id="main_content">
             
