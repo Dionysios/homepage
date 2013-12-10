@@ -27,7 +27,7 @@
                      
                     </ul>
                 </li>
-                <li class="first_list"><a href="contact.html" class="main_menu_first">Say Hello!</a></li>
+                <li class="first_list"><a href="../homepage/contact.php" class="main_menu_first">Say Hello!</a></li>
             </ul>
         
         </div> <!-- END #main_menu -->
