@@ -45,12 +45,15 @@ h1 a {
 #logo1 {
     font-size: 35px;
     font-weight: bold;
+    font-family:'Lucida calligraphy',arial,'sans serif';
+    
 }
 
 #logo2 {
     font-size: 35px;
     font-weight: bold;
     color:#81e4ed;
+     font-family:'Lucida calligraphy',arial,'sans serif';
 }
 
 
@@ -72,6 +75,7 @@ h1 a {
     font-weight: bold;
     padding: 8px 8px;
     text-transform: uppercase;
+    text-decoration: none;
 
 }
 
@@ -149,6 +153,11 @@ h1 a {
     padding: 19px 0 45px 0;
 }
 
+#cv_area {
+    background: #81e4ed url(../images/banner_shadow.png) repeat-x;
+    border-top: 1px solid #6ec2ca;
+    padding: 19px 0 10px 0;
+}
 #mid_content {
     border-bottom: 1px solid #d9d9d9;
     background: #e8ebf1;
@@ -669,7 +678,7 @@ a#pagination_next:hover, a#pagination_end:hover {
     border-top: 1px solid #d9d9d9;
     clear: both;
     height: 320px;
-    margin-top: 40px;
+  <!--  margin-top: 40px; -->
 }
 
 #footer p, #footer a {
@@ -809,5 +818,6 @@ outline: none;
 #slideshow_buttons li {    
     margin: 0 9px;
 }
-
-
+.logo{
+float:left;
+}

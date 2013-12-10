@@ -1,35 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>DionPapas - Home</title>
-    <link rel="stylesheet" type="text/css" href="homepage/stylesheets/reset.css" />
-    <link rel="stylesheet" type="text/css" href="homepage/stylesheets/main.css" />
-    <script type="text/javascript" src="homepage/js/jquery-2.0.3.min.js"></script>
-    <script type="text/javascript" src="homepage/js/jquery.cycle.all.js"></script>
-	
-	<script type="text/javascript">
-$(document).ready(function() {
-  $('#slideshow_container') 
-.before('<div id="slideshow_buttons">') 
-.cycle({ 
-    fx:     'fade', 
-    speed:  'fast', 
-    timeout: 5000, 
-    pager:  '#slideshow_buttons',   
-    pagerAnchorBuilder: function(index, el) {
-     return '<a class="dot" href="#">&nbsp;</a>'; // whatever markup you want
-    }
-});
-});
-</script>
-</head>
+<?php include_once("header.php") ?>
 
 <body>
 	<?php include_once("homepage/analytics.php") ?>
     <? $test=$txt1="Learn PHP";?>
    	<? include("homepage/header_div.php"); ?> 
-    
+   		
  <div id="main_content">
             
         <div id="slideshow_area">
@@ -58,7 +33,7 @@ $(document).ready(function() {
                 
             <div class="mid_content_info mid_content_space">
                     
-                <h2 id="clean">CLEAN THEME</h2>
+                <h2 id="clean">AGILE DESIGN</h2>
                 <p>Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit dictum molestie. Duis porta gravida augue sed viverra. Quisque at nulla leo,
                 non aliquet mi.</p>
                 <a href="#"><img src="homepage/images/arrow_right.png" alt="arrow right" />Read More</a>
@@ -67,7 +42,7 @@ $(document).ready(function() {
                 
             <div class="mid_content_info mid_content_space">
 
-                <h2 id="responsive">RESPONSIVE DESIGN  <? echo $test;?></h2>
+                <h2 id="responsive">High Quality Deliverables</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod placerat dui et tincidunt. Sed sollicitudin posuere auctor. Phasellus at
                 ultricies nisl. Integer at leo eros.</p>
                 <a href="#"><img src="homepage/images/arrow_right.png" alt="arrow right" />Read More</a>
@@ -76,7 +51,7 @@ $(document).ready(function() {
                 
             <div class="mid_content_info mid_content_space">
                     
-                <h2 id="fully">FULLY LAYERED PSD</h2>
+                <h2 id="fully">SPRINT PROCEDURES</h2>
                 <p>Phasellus lobortis metus non augue sodales volutpat. Vestibulum sit amet nibh eros, hendrerit venenatis est. In vitae nulla nec purus cursus
                 pretium sed id magna.</p>
                 <a href="#"><img src="homepage/images/arrow_right.png" alt="arrow right" />Read More</a>

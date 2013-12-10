@@ -45,12 +45,15 @@ h1 a {
 #logo1 {
     font-size: 35px;
     font-weight: bold;
+    font-family:lucida calligraphy,arial,'sans serif';
+    
 }
 
 #logo2 {
     font-size: 35px;
     font-weight: bold;
     color:#81e4ed;
+     font-family:lucida calligraphy,arial,'sans serif';
 }
 
 
@@ -775,7 +778,7 @@ p#copyright {
 /* css from Dion 4 slideshow */
 
 #slideshow_container {
- z-index:9999;
+ z-index:9;
 }
 
 #slideshow_buttons a.current {

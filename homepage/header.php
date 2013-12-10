@@ -1,37 +1,34 @@
-    <div id="header">
-        
-        <div class="container">
-        
-        <h1><span id="logo1">WeL</span><span id="logo2">Come</span><a href="index.html">DionPapas</a></h1>
-        
-        <div id="main_menu">
-        
-            <ul>
-                <li class="first_list"><a href="#" class="main_menu_first">about me</a></li>
-                <li class="first_list with_dropdown">
-                    <a href="#"  class="main_menu_first">services</a>
-                    <ul>
-                        <li class="second_list second_list_border"><a href="#" class="main_menu_second">Java development</a></li>
-                        <li class="second_list second_list_border"><a href="#" class="main_menu_second">wordpress development</a></li>
-                        <li class="second_list second_list_border"><a href="#" class="main_menu_second">android development</a></li>
-                        <li class="second_list second_list_border"><a href="#" class="main_menu_second">internet marketing</a></li>
-                    </ul>
-                </li>
-                <li class="first_list with_dropdown">
-                    <a href="portfolio.html" class="main_menu_first">portfolio</a>
-                    <ul>
-                        <li class="second_list second_list_border"><a href="#" class="main_menu_second">websites</a></li>
-                        <li class="second_list second_list_border"><a href="#" class="main_menu_second">wordpress</a></li>
-                        <li class="second_list second_list_border"><a href="#" class="main_menu_second">mobile apps</a></li>
-                        <li class="second_list second_list_border"><a href="#" class="main_menu_second">Java apps</a></li>
-                     
-                    </ul>
-                </li>
-                <li class="first_list"><a href="contact.html" class="main_menu_first">Say Hello!</a></li>
-            </ul>
-        
-        </div> <!-- END #main_menu -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+    <title>DionPapas - Home</title>
     
-        </div> <!-- END .container -->
-    
-    </div> <!-- END #header -->
+  
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" media="all" /> 
+	<link rel="stylesheet" type="text/css" href="../homepage/stylesheets/resume.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="../homepage/stylesheets/main.css" />
+    <script type="text/javascript" src="homepage/js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="homepage/js/jquery.cycle.all.js"></script>
+	
+	<script type="text/javascript">
+$(document).ready(function() {
+  $('#slideshow_container') 
+.before('<div id="slideshow_buttons">') 
+.cycle({ 
+    fx:     'fade', 
+    speed:  'fast', 
+    timeout: 5000, 
+    pager:  '#slideshow_buttons',   
+    pagerAnchorBuilder: function(index, el) {
+     return '<a class="dot" href="#">&nbsp;</a>'; // whatever markup you want
+    }
+});
+});
+</script>
+<?php include_once("homepage/analytics.php") ?>
+</head>

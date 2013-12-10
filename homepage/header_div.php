@@ -2,12 +2,12 @@
         
         <div class="container">
         
-        <h1><span id="logo1">WeL</span><span id="logo2">Come</span><a href="index.html">DionPapas</a></h1>
-        
+  <!--  <h1><span id="logo1">WeL</span><span id="logo2">Come</span><a href="index.html">DionPapas</a></h1>-->
+         <a href="http://dionpapas.com"><img class="logo" src="../homepage/images/logo_6.png"/></a>
         <div id="main_menu">
         
             <ul>
-                <li class="first_list"><a href="#" class="main_menu_first">about me</a></li>
+                <li class="first_list"><a href="../homepage/resume.php" class="main_menu_first">about me</a></li>
                 <li class="first_list with_dropdown">
                     <a href="#"  class="main_menu_first">services</a>
                     <ul>
