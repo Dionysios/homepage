@@ -1,5 +1,6 @@
 <? include("../homepage/header.php") ?>
 <? include("../homepage/header_div.php"); ?>
+<?php include("../homepage/functions.php");?>
 <body>
 <? include("/homepage/header_div.php"); ?>
 <div id="cv_area">
@@ -15,7 +16,7 @@
 
 				<div class="yui-u">
 					<div class="contact-info">
-						<h3><a id="pdf" href="#">Download PDF</a></h3>
+						<h3><a id="pdf" href="download.php">Download PDF</a></h3>
 						<h3><a href="mailto:name@yourdomain.com">dpapathanopoulos@webst.gr</a>
 					</div><!--// .contact-info -->
 				</div>

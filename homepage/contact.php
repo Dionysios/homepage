@@ -68,6 +68,8 @@
                         <p><span class="bold_text">Gothenborg</span>
                         <br />
 						Sweden
+						  <br />
+                       Skype: dpapathanopoulos
                         
                         <br />
                         Phone: 0764071464

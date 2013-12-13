@@ -5,8 +5,7 @@
             <div id="footer_about" class="footer_info">
                 
                 <h4>Personal</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod placerat dui et tincidunt. Sed sollicitudin posuere auctor. Phasellus at
-                ultricies nisl. Integer at leo eros. Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit dictum molestie. </p>
+                <p>Software development plays a major role in my life; it is not only a profession but a way to constantly express and evolve myself. I firmly believe that I have the skills and values to make a valuable contribution to your company and look forward to the opportunity to meet you. </p>
                 
             </div> <!-- END #footer_about -->
             
@@ -14,28 +13,14 @@
                 
                 <h4>explore</h4>
                 <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="#">about us</a></li>
-                    <li><a href="#">services</a></li>
-                    <li><a href="portfolio.html">portfolio</a></li>
-                    <li><a href="#">blog</a></li>
+                    <li class="footer_main_links"><a href="../homepage/resume.php">CV</a></li>
+                    <li class="footer_main_links"><a href="">Projects</a></li>
+                    <li class="footer_main_links"><a href="h../homepage/contact.php">Say Hello!</a></li>
                 </ul>
                 
             </div> <!-- END #footer_about -->           
             <div id="footer_contact" class="footer_info">
-                
-                <h4>contact </h4>
-                <p><span class="bold_text">BisLite Inc.</span>
-                <br />
-                Always Street 265
-                <br />
-                0X - 125 - Canada
-                <br />
-                <br />
-                Phone: 987-6543-210
-                <br />
-                Fax: 987-6543-210</p>
-                
+                 
             </div> <!-- END #footer_about -->
 <div id="footer_connect" class="footer_info">
                 

@@ -9,16 +9,7 @@
             <ul>
                 <li class="first_list"><a href="../homepage/resume.php" class="main_menu_first">about me</a></li>
                 <li class="first_list with_dropdown">
-                    <a href="#"  class="main_menu_first">services</a>
-                    <ul>
-                        <li class="second_list second_list_border"><a href="#" class="main_menu_second">Java development</a></li>
-                        <li class="second_list second_list_border"><a href="#" class="main_menu_second">wordpress development</a></li>
-                        <li class="second_list second_list_border"><a href="#" class="main_menu_second">android development</a></li>
-                        <li class="second_list second_list_border"><a href="#" class="main_menu_second">internet marketing</a></li>
-                    </ul>
-                </li>
-                <li class="first_list with_dropdown">
-                    <a href="portfolio.html" class="main_menu_first">portfolio</a>
+                    <a href="portfolio.html" class="main_menu_first">Projects</a>
                     <ul>
                         <li class="second_list second_list_border"><a href="#" class="main_menu_second">websites</a></li>
                         <li class="second_list second_list_border"><a href="#" class="main_menu_second">wordpress</a></li>
