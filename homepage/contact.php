@@ -1,8 +1,33 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<?php 
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $from = 'From: TangledDemo'; 
+    $to = 'nionios250@gmail.com'; 
+    $subject = 'Hello';
+    
+    $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+    
+    
+    
+    if ($_POST['submit']) {
+    	if (mail ($to, $subject, $body, $from)) {
+    		echo '<p>Your message has been sent!</p>';
+    	} else {
+    		echo '<p>Something went wrong, go back and try again!</p>';
+    	}
+    }
+    
+
+	 $to = 'nionios250@gmail.com'; 
+$res = mail ( $to, $name, $body,$from );
+var_export( $res );
+    
+?> 
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>BisLite - Contact Us</title>
+  
     <link rel="stylesheet" type="text/css" href="stylesheets/reset.css" />
     <link rel="stylesheet" type="text/css" href="stylesheets/main.css" />
     
@@ -28,7 +53,7 @@
                     <br />
                     For feedback or questions, please email at: <a href="mailto:email@dpapathanopoulos@webst.gr" class="bold_text blue_text">dpapathanopoulos@webst.gr</a></p>
                     
-                    <form action="#" method="post" id="contact_form">
+                    <form action="contact.php" method="post" id="contact_form">
                         <fieldset>                            
 			    <ol>
                                 <li>
@@ -56,9 +81,9 @@
                     
                     <div id="location_map">
                         
-                        <h3>We are here!</h3>
+                        <h3>I am here!</h3>
                         
-                        <a href="#"><img src="images/map.jpg" alt="map" /></a>
+                        <a href="#"><img src="images/map.png" alt="map" /></a>
                         
                     </div> <!-- END #location_map -->
                     

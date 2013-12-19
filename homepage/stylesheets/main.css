@@ -630,6 +630,7 @@ a#pagination_next:hover,a#pagination_end:hover {
 
 #contact_form input {
 	height: 35px;
+	width: 600px;
 }
 
 #contact_form input:focus,#contact_form textarea:focus {
@@ -878,4 +879,8 @@ p#copyright {
 }
 #slideshow_pagination a.current {
     background: url(../images/white_button.png) no-repeat;
+}
+
+#fieldset {
+	
 }
