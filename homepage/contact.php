@@ -6,22 +6,25 @@
     $to = 'nionios250@gmail.com'; 
     $subject = 'Hello';
     
-    $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+   // $body = "From: $name\n E-Mail: $email\n Message:\n $message";
     
+   
     
-    
-    if ($_POST['submit']) {
-    	if (mail ($to, $subject, $body, $from)) {
-    		echo '<p>Your message has been sent!</p>';
+    if (isset($_POST['submit'])) {
+	
+		 $res = mail ( $to, $name, $message,$from );
+        var_export( $res );
+		  	
+    	if (mail ($to, $subject, $message, $from)) {
+    	//	echo '<p>Your message has been sent!</p>';
     	} else {
-    		echo '<p>Something went wrong, go back and try again!</p>';
+    	//	echo '<p>Something went wrong, go back and try again!</p>';
     	}
+    	$_POST['submit'] = null;
     }
     
 
-	 $to = 'nionios250@gmail.com'; 
-$res = mail ( $to, $name, $body,$from );
-var_export( $res );
+
     
 ?> 
 
@@ -69,7 +72,7 @@ var_export( $res );
 				    <label for="message">Description</label><textarea name="message" rows="10" cols="57" id="message"></textarea>
 				</li>
 				<li>
-				    <input type="submit" value="SUBMIT" size="" maxlength="" />
+				    <input type="submit" value="SUBMIT" size="" name="submit" maxlength="" />
 				</li>
 			    </ol>
                         </fieldset>
