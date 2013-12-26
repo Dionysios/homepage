@@ -3,10 +3,10 @@
 <head>
 
 
- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  
-    <link rel="stylesheet" type="text/css" href="stylesheets/reset.css" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/main.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" type="text/css" href="stylesheets/reset.css" />
+<link rel="stylesheet" type="text/css" href="stylesheets/main.css" />
 
 <meta name="keywords" content="" />
 <meta name="description" content="" />
@@ -36,6 +36,7 @@
 	  maxSlides: 4,
 	  pagerCustom: '#carousel_nav',
 	  slideWidth: 360,
+	  responsive: true,
 	  slideMargin: 10
 	  });
   
@@ -44,6 +45,7 @@
 	  auto: true,
 	  autoControls: false, 
 	  pagerCustom: '#slideshow_pagination',
+	  responsive: true,
 	  controls: false,
 	  timeout: 5000,
 	});

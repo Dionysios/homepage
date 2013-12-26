@@ -1,9 +1,16 @@
 <?php include_once("header.php") ?>
+<?  require_once('functions.php');
+
+$ip = getRealIp();
+  // echo $ip;
+saveIp($ip);
+?>
 
 <body>
 	<?php include_once("homepage/analytics.php") ?>
-	<? $test=$txt1="Learn PHP";?>
-	<? include("homepage/header_div.php"); ?>
+	<? include("homepage/header_div.php"); 
+	//saveIp();
+	?>
 
 	<div id="main_content">
 
@@ -96,15 +103,18 @@
 
 		<h3>LATEST WORKS</h3>
 
-		 <div id="carousel_nav">
-		 <a href="#" id="previous-column" data-slide-index="0"><img id="previous-column" src="homepage/images/bluearrow_left.png" alt="arrow left"/></a>
-		 <a href="#" id="next-column" data-slide-index="1"><img src="homepage/images/bluearrow_right.png" alt="arrow right"/></a>	
-		</div> 
-		
+		<div id="carousel_nav">
+			<a href="#" id="previous-column" data-slide-index="0"><img
+				id="previous-column" src="homepage/images/bluearrow_left.png"
+				alt="arrow left" /> </a> <a href="#" id="next-column"
+				data-slide-index="1"><img src="homepage/images/bluearrow_right.png"
+				alt="arrow right" /> </a>
+		</div>
+
 
 		<!-- END #carousel_nav -->
 
-		 <div id="carousel_wrapper">
+		<div id="carousel_wrapper">
 			<div class="slide">
 				<li id="work01"><a href="#"><img
 						src="homepage/images/sample_view.gif" alt="work01" /> </a>
@@ -144,48 +154,48 @@
 				<li id="work08"><a href="#"><img
 						src="homepage/images/sample_view.gif" alt="work08" /> </a>
 				</li>
-	</div>
-
-	</div> 	
-	<!-- END #latest_works -->
-
-	<div id="bottom_content">
-
-		<div id="testimonials">
-
-			<h3>TESTIMONIALS</h3>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut
-				nulla sapien, at aliquam erat. Sed vitae massa tellus. Aliquam
-				commodo aliquam metus, sed iaculis nibh tempus id. Lorem ipsum dolor
-				sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis
-				in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam nec
-				nisi in nisl euismod fringilla. <br /> <br /> <span
-					class="testimonial_name">John Travis, CEO, DomainName.com</span>
-			</p>
+			</div>
 
 		</div>
-		<!-- END #testimonials -->
+		<!-- END #latest_works -->
 
-		<div id="clients">
+		<div id="bottom_content">
 
-			<h3>Partners</h3>
+			<div id="testimonials">
 
-			<ul>
-				<li><img src="homepage/images/volvoit" alt="Volvo IT" /></li>
-				<li><img src="homepage/images/client02.jpg" alt="CNN" /></li>
-				<li><img src="homepage/images/client03.jpg" alt="Apartment Finder" />
-				</li>
-				<li><img src="homepage/images/client04.jpg" alt="John Deere" /></li>
-				<li><img src="homepage/images/client05.jpg" alt="Banana Boat" /></li>
-				<li><img src="homepage/images/client06.jpg" alt="Fuji Film" /></li>
-			</ul>
+				<h3>TESTIMONIALS</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+					ut nulla sapien, at aliquam erat. Sed vitae massa tellus. Aliquam
+					commodo aliquam metus, sed iaculis nibh tempus id. Lorem ipsum
+					dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum
+					primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+					Etiam nec nisi in nisl euismod fringilla. <br /> <br /> <span
+						class="testimonial_name">John Travis, CEO, DomainName.com</span>
+				</p>
+
+			</div>
+			<!-- END #testimonials -->
+
+			<div id="clients">
+
+				<h3>Partners</h3>
+
+				<ul>
+					<li><img src="homepage/images/volvoit" alt="Volvo IT" /></li>
+					<li><img src="homepage/images/client02.jpg" alt="CNN" /></li>
+					<li><img src="homepage/images/client03.jpg" alt="Apartment Finder" />
+					</li>
+					<li><img src="homepage/images/client04.jpg" alt="John Deere" /></li>
+					<li><img src="homepage/images/client05.jpg" alt="Banana Boat" /></li>
+					<li><img src="homepage/images/client06.jpg" alt="Fuji Film" /></li>
+				</ul>
+
+			</div>
+			<!-- END #clients -->
 
 		</div>
-		<!-- END #clients -->
-
-	</div>
-	<!-- END #bottom_content -->
+		<!-- END #bottom_content -->
 
 	</div>
 	<!-- END #main_content -->
