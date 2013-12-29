@@ -3,6 +3,7 @@
 function saveIp($ip){
 	include_once("global.php");
 
+    if ($ip != $homeserver){
 	$link =  mysql_connect( $hostname , $username, $password);
 	if (!$link) {
 	//	 die('Could not connect: ' . mysql_error());
@@ -21,6 +22,7 @@ function saveIp($ip){
 	//		echo("<br>Input data is fail");
 	}
 	mysql_close($link);
+	}
 }
 
 function getRealIp() {
