@@ -27,9 +27,6 @@ saveIp($ip);
 					<li><img src="homepage/images/android.jpg" width="1000px"
 						height="440px" />
 					</li>
-					<li><img src="homepage/images/background.jpg" width="1000px"
-						height="440px" />
-					</li>
 				</ul>
 			</div>
 			<div id="slideshow_pagination">
@@ -40,8 +37,6 @@ saveIp($ip);
 					</li>
 					<li><a data-slide-index="2" href="#" class="slideshow_pagination"></a>
 					</li>
-					<li><a data-slide-index="3" href="#" class="slideshow_pagination"></a>
-					</li>
 				</ul>
 			</div>
 		</div>
@@ -51,43 +46,34 @@ saveIp($ip);
 
 
 	<div id="mid_content">
-
 		<div class="container">
-
 			<div class="mid_content_info mid_content_space">
-
 				<h2 id="clean">AGILE DESIGN</h2>
+				<div id="spring_text">
 				<p>Implementation design and process is done based on the Agile
 					princiles in order to achieve the maximun "Agility" for your
-					project</p>
+					project</p></div>
 			</div>
-
 			<div class="mid_content_info mid_content_space">
-
 				<h2 id="responsive">High Quality Deliverables</h2>
+				<div id="spring_text">
 				<p>Quality of every deliverable is the aim for every project.
 					Following state of the latest techniques and tools on the field we
 					provide top quality experience to the customer for every part of
-					the project</p>
+					the project</p></div>
 			</div>
-
 			<div class="mid_content_info mid_content_space">
-
 				<h2 id="fully">SPRINT PROCEDURES</h2>
-				<p>Development process usually follows Scrum developement
-					framework.The implementation is divided into a process of several
-					small sprints which are indentified by a planning meeting with the
-					customer.</p>
+				<div id="spring_text">
+				<p>Development process follows Scrum developement framework.Implementation is divided into sprints based on the need of the customer.</p></div>
 				<a href="http://en.wikipedia.org/wiki/File:Scrum_process.svg"><img
 					src="homepage/images/arrow_right.png" alt="arrow right" />Read More</a>
-
 			</div>
-
 			<div class="mid_content_info">
-
 				<h2 id="ready">READY FOR CODE</h2>
+				<div id="spring_text">
 				<p>Let me know more about your project and we will discover together
-					ways and methods to support your business</p>
+					ways and methods to support your business</p></div>
 				<a href="homepage/contact.php"><img
 					src="homepage/images/arrow_right.png" alt="arrow right" />More</a>
 
@@ -155,7 +141,7 @@ saveIp($ip);
 						src="homepage/images/sample_view.gif" alt="work08" /> </a>
 				</li>
 			</div>
-
+		</div>
 		</div>
 		<!-- END #latest_works -->
 
@@ -182,13 +168,13 @@ saveIp($ip);
 				<h3>Partners</h3>
 
 				<ul>
-					<li><img src="homepage/images/volvoit" alt="Volvo IT" /></li>
-					<li><img src="homepage/images/client02.jpg" alt="CNN" /></li>
-					<li><img src="homepage/images/client03.jpg" alt="Apartment Finder" />
+					<li><img src="homepage/images/client01.jpg" alt="VOLVO" /></li>
+					<li><img src="homepage/images/client02.jpg" alt="WEBST" /></li>
+					<li><img src="homepage/images/client03.jpg" alt="GOTHENBURG UNIVERSITY" />
 					</li>
-					<li><img src="homepage/images/client04.jpg" alt="John Deere" /></li>
-					<li><img src="homepage/images/client05.jpg" alt="Banana Boat" /></li>
-					<li><img src="homepage/images/client06.jpg" alt="Fuji Film" /></li>
+					<li><img src="homepage/images/client04.jpg" alt="CHALMERS" /></li>
+					<li><img src="homepage/images/client05.jpg" alt="CTI Patras" /></li>
+					<li><img src="homepage/images/client06.jpg" alt="Provide IT" /></li>
 				</ul>
 
 			</div>

@@ -277,9 +277,9 @@ h1 a {
 }
 
 #carousel_wrapper li a img,#portfolio_list li a img {
-	position:absolute;
-	top:80px;
-	right:0%;
+	position: absolute;
+	top: 80px;
+	right: 0%;
 	visibility: hidden;
 }
 
@@ -748,13 +748,19 @@ a#pagination_next:hover,a#pagination_end:hover {
 	background: url(../images/skype_icon.png) no-repeat;
 }
 
+#skype_button {
+	background: url(../images/skype_icon.png) no-repeat;
+	height:52px;
+	width: 55px;
+}
+
 #sharethis {
 	background: url(../images/sharethis_icon.png) no-repeat;
 }
 
 p#copyright {
 	clear: both;
-	float: left;
+	float: right;
 	font-size: 13px;
 }
 
@@ -805,7 +811,7 @@ p#copyright {
 	margin: 0 9px;
 }
 
-.bx-pager bx-default-pager a{
+.bx-pager bx-default-pager a {
 	/* background: url(../images/grey_button.png) no-repeat;
 	text-decoration: none;
 	margin: 0 10px;
@@ -822,7 +828,7 @@ p#copyright {
 	text-decoration: none;
 	margin: 0 10px;
 	padding: 3px 7px;
-} 
+}
 
 .bx-pager-link.active {
 	background: url(../images/white_button.png) no-repeat;
@@ -831,9 +837,6 @@ p#copyright {
 .bx-pager-links a:focus {
 	outline: none;
 }
-
-
-
 
 .logo {
 	float: left;
@@ -845,42 +848,52 @@ p#copyright {
 
 #flip {
 	color: #2aacc8;
-	text-decoration:underline;
-	width:80px;
+	text-decoration: underline;
+	width: 80px;
 }
+
 #panel {
 	padding: 50px;
 	display: none;
 }
 
 #slideshow_pagination {
-   /*  margin: 10px auto;
+	/*  margin: 10px auto;
     width: 160px; */
 	margin: 20px auto auto auto;
-    padding-bottom: 20px;
+	padding-bottom: 20px;
 	position: absolute;
 	top: 585px;
-	left: 45%;
+	left: 46%;
 }
 
 #slideshow_pagination li {
-    float: left;
-    margin: 0 9px;
+	float: left;
+	margin: 0 9px;
 }
 
 #slideshow_pagination a {
-    background: url(../images/grey_button.png) no-repeat;
-    display: block;
-    height: 14px;
-    width: 14px;
+	background: url(../images/grey_button.png) no-repeat;
+	display: block;
+	height: 14px;
+	width: 14px;
 }
+
 #slideshow_pagination a.active {
-    background: url(../images/white_button.png) no-repeat;
+	background: url(../images/white_button.png) no-repeat;
 }
+
 #slideshow_pagination a.current {
-    background: url(../images/white_button.png) no-repeat;
+	background: url(../images/white_button.png) no-repeat;
 }
 
 #fieldset {
 	
 }
+.footer_personal{
+text-align: left;
+}
+#spring_text{
+text-align: left;
+}
+	
