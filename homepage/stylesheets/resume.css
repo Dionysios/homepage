@@ -95,8 +95,13 @@ p {
 	padding-right: 3em;
 }
 
-a {
-	color: #990003
+/*  a {
+	//color: #990003;
+	//color: #fff;
+} */
+#emailtome {
+	color: #990003;
+	text-decoration-color: #990003;
 }
 
 a:hover {

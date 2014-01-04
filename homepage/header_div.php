@@ -5,7 +5,7 @@
 
 		<!--  <h1><span id="logo1">WeL</span><span id="logo2">Come</span><a href="index.html">DionPapas</a></h1>-->
 		<a href="http://dionpapas.com"><img class="logo"
-			src="../homepage/images/logo_6.png" /> </a>
+			src="../homepage/images/logo_8.png" /> </a>
 		<div id="main_menu">
 
 			<ul>

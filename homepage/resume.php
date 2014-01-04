@@ -20,8 +20,8 @@
 									<a id="pdf" href="download.php">Download PDF</a>
 								</h3>
 								<h3>
-									<a href="mailto:name@yourdomain.com">dpapathanopoulos@webst.gr</a>
-							
+									<a id="emailtome" href="mailto:dpapathanopoulos@webst.gr">dpapathanopoulos@webst.gr</a>
+								</h3>
 							</div>
 							<!--// .contact-info -->
 						</div>

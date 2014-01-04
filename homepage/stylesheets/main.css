@@ -22,7 +22,7 @@ body {
 /* ----- Header Styling ----- */
 #header {
 	background: #e8ebf1;
-	height: 120px;
+	height: 100px;
 }
 
 h1 {
@@ -43,6 +43,9 @@ h1 a {
 	font-size: 35px;
 	font-weight: bold;
 	font-family: 'Lucida calligraphy', arial, 'sans serif';
+}
+.logo {
+	margin-top:25px;
 }
 
 #logo2 {
@@ -258,8 +261,9 @@ h1 a {
 }
 
 #carousel_wrapper {
-	border-top: 1px solid #dfe1e5;
-	border-bottom: 1px solid #dfe1e5;
+ 	border-top: 1px solid #dfe1e5;
+	border-bottom: 1px solid #dfe1e5; 
+	/* border-style:1px solid #fff; */
 	clear: left;
 	height: 220px;
 }
@@ -863,8 +867,8 @@ p#copyright {
 	margin: 20px auto auto auto;
 	padding-bottom: 20px;
 	position: absolute;
-	top: 585px;
-	left: 46%;
+	top: 565px;
+	left: 47%;
 }
 
 #slideshow_pagination li {
@@ -896,4 +900,7 @@ text-align: left;
 #spring_text{
 text-align: left;
 }
-	
+.emailtome {
+	color: #990003;
+	text-decoration-color: #990003;;
+}

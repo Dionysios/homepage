@@ -2,16 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 
-
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-<link rel="stylesheet" type="text/css" href="stylesheets/reset.css" />
-<link rel="stylesheet" type="text/css" href="stylesheets/main.css" />
 
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <title>DionPapas - Home</title>
-
 
 <link rel="stylesheet" type="text/css"
 	href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css"
