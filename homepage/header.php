@@ -6,6 +6,10 @@
 
 <meta name="keywords" content="" />
 <meta name="description" content="" />
+<meta name="description" content="Personal Web Page">
+<meta name="keywords" content="Java,Android,Hibernate,Spring,HTML,CSS,XML,JavaScript">
+<meta name="author" content="Dionysios Papathanopoulos">
+<meta charset="UTF-8">
 <title>DionPapas - Home</title>
 
 <link rel="stylesheet" type="text/css"
@@ -37,6 +41,7 @@
   $('#slider2').bxSlider({
 	  mode: 'fade',
 	  auto: true,
+	  captions: true,
 	  autoControls: false, 
 	  pagerCustom: '#slideshow_pagination',
 	  responsive: true,

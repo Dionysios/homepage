@@ -207,6 +207,7 @@ h1 a {
 
 .mid_content_info a {
 	color: #2aacc8;
+	float:left;
 }
 
 .mid_content_info a img {
@@ -900,7 +901,23 @@ text-align: left;
 #spring_text{
 text-align: left;
 }
-.emailtome {
-	color: #990003;
-	text-decoration-color: #990003;;
+
+/* IMAGE CAPTIONS */
+
+.bx-wrapper .bx-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+ 	background: #666\9;
+	background: rgba(80, 80, 80, 0.75); 
+	width: 100%;
+}
+
+.bx-wrapper .bx-caption span {
+	color: #fff;
+	font-family: Arial;
+	display: block;
+/* 	font-size: .85em; */
+	font-size: 1.15em;
+	padding: 10px;
 }

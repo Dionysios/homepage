@@ -7,7 +7,7 @@ saveIp($ip);
 ?>
 
 <body>
-	<?php include_once("homepage/analytics.php") ?>
+	<?php //include_once("homepage/analytics.php") ?>
 	<? include("homepage/header_div.php"); 
 	//saveIp();
 	?>
@@ -18,15 +18,17 @@ saveIp($ip);
 
 			<div class="container">
 				<ul id="slider2">
-					<li><img src="homepage/images/banner_image.jpg" width="1000px"
-						height="440px" />
-					</li>
-					<li><img src="homepage/images/test3.jpg" width="1000px"
-						height="440px" />
-					</li>
-					<li><img src="homepage/images/android.jpg" width="1000px"
-						height="440px" />
-					</li>
+					<li><a href="/homepage/resume.php"><img
+							src="homepage/images/banner_image.jpg" width="1000px"
+							height="440px"
+							title="Applications developement in Java, Java EE, Spring, Hibernate and more..." />
+					</a></li>
+					<li><a href="/homepage/resume.php"><img
+							src="homepage/images/test3.jpg" width="1000px" height="440px" />
+					</a></li>
+					<li><a href="/homepage/resume.php"><img
+							src="homepage/images/android.jpg" width="1000px" height="440px" />
+					</a></li>
 				</ul>
 			</div>
 			<div id="slideshow_pagination">
@@ -68,8 +70,9 @@ saveIp($ip);
 				<h2 id="fully">SPRINT PROCEDURES</h2>
 				<div id="spring_text">
 					<p>Development process follows Scrum developement
-						framework.Implementation is divided into sprints based on the need
-						of the customer.</p>
+						framework.Implementation is divided into sprints based on the
+						needs of the customer.
+				
 				</div>
 				<a href="http://en.wikipedia.org/wiki/File:Scrum_process.svg"><img
 					src="homepage/images/arrow_right.png" alt="arrow right" />Read More</a>

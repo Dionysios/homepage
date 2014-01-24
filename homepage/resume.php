@@ -10,8 +10,12 @@
 				<div id="hd">
 					<div class="yui-gc">
 						<div class="yui-u first">
-							<h1>Dionysios Papathanopoulos</h1>
-							<h2>Web, Java, Mobile developer</h2>
+						<img src="images/dion.png" alt="map" />						
+						</br>
+						</br>
+						</br>
+							<h2>Dionysios Papathanopoulos</h1>
+							<h3>Web, Java, Mobile developer</h2>
 						</div>
 
 						<div class="yui-u">

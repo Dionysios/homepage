@@ -4,23 +4,9 @@ $email = $_POST['email'];
 $message = $_POST['message'];
 $from = 'From: TangledDemo';
 $to = 'nionios250@gmail.com';
-$subject = 'Hello';
+$subject = 'Hello'; 
 
-
-/*     $pattern = "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i";
- if (preg_match($pattern, trim(strip_tags($_POST['email'])))) {
-$cleanedFrom = trim(strip_tags($_POST['email']));
-
-} else {
-return "The email address you entered was invalid. Please try again!";
-}
-*/
-
-
-if (isset($_POST['submit'])) {
-
-	$res = mail ( $to, $name, $message,$from );
-	var_export( $res );
+ if (isset($_POST['submit'])) {
 
 	if (mail ($to, $subject, $message, $from)) {
 		//	echo '<p>Your message has been sent!</p>';
@@ -28,11 +14,7 @@ if (isset($_POST['submit'])) {
 		//	echo '<p>Something went wrong, go back and try again!</p>';
 	}
 	$_POST['submit'] = null;
-}
-
-
-
-
+} 
 ?>
 
 <head>
