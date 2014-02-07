@@ -7,7 +7,8 @@
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta name="description" content="Personal Web Page">
-<meta name="keywords" content="Java,Android,Hibernate,Spring,HTML,CSS,XML,JavaScript">
+<meta name="keywords"
+	content="Java,Android,Hibernate,Spring,HTML,CSS,XML,JavaScript">
 <meta name="author" content="Dionysios Papathanopoulos">
 <meta charset="UTF-8">
 <title>DionPapas - Home</title>
@@ -20,10 +21,11 @@
 <link rel="stylesheet" type="text/css"
 	href="../homepage/stylesheets/main.css" />
 
-
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <!-- bxSlider Javascript file -->
 <script src="homepage/js/jquery.bxslider.min.js"></script>
+<script type="text/javascript"
+	src="homepage/js/jquery-scrolltofixed-min.js"></script>
 <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
 
 <script> 
@@ -50,6 +52,10 @@
 	});
 	});
 
+	$(document).ready(function() {
+			$('.header').scrollToFixed();
+	});
+</script>
 </script>
 <?php include_once("homepage/analytics.php") ?>
 </head>

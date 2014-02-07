@@ -1,5 +1,5 @@
 
-<div id="header">
+<div class="header">
 
 	<div class="container">
 

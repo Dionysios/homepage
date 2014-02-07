@@ -8,8 +8,8 @@ saveIp($ip);
 
 <body>
 	<?php //include_once("homepage/analytics.php") ?>
-	<? include("homepage/header_div.php"); 
-	//saveIp();
+	<? include_once("homepage/header_div.php"); 
+	
 	?>
 
 	<div id="main_content">
@@ -17,6 +17,7 @@ saveIp($ip);
 		<div id="slideshow_area">
 
 			<div class="container">
+				<div class="bx-wrapper_slideshow">
 				<ul id="slider2">
 					<li><a href="/homepage/resume.php"><img
 							src="homepage/images/banner_image.jpg" width="1000px"
@@ -41,6 +42,7 @@ saveIp($ip);
 					</li>
 				</ul>
 			</div>
+			</div><!-- END .wrapperr -->
 		</div>
 		<!-- END .container -->
 	</div>
@@ -197,9 +199,6 @@ saveIp($ip);
 	</div>
 	<!-- END #main_content -->
 
-
-
 	<? include("homepage/footer.php");?>
-
 </body>
 </html>
