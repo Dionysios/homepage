@@ -3,15 +3,16 @@
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
 <meta name="keywords" content="" />
-<meta name="description" content="" />
 <meta name="description" content="Personal Web Page">
 <meta name="keywords"
-	content="Java,Android,Hibernate,Spring,HTML,CSS,XML,JavaScript">
+	content="Dionysios Papathanopoulos,Java,Android,Hibernate,Spring,HTML,CSS,XML,JavaScript">
 <meta name="author" content="Dionysios Papathanopoulos">
 <meta charset="UTF-8">
-<title>DionPapas - Home</title>
+<title>Dionysios - Home</title>
+
+
+<!-- <meta name="viewport" content="width=device-width; initial-scale=1.0"> -->
 
 <link rel="stylesheet" type="text/css"
 	href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css"
@@ -20,14 +21,23 @@
 	href="../homepage/stylesheets/resume.css" media="all" />
 <link rel="stylesheet" type="text/css"
 	href="../homepage/stylesheets/main.css" />
+<!-- 	<link rel="stylesheet" type="text/css"
+	href="../homepage/stylesheets/foundation.css" /> -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <!-- bxSlider Javascript file -->
 <script src="homepage/js/jquery.bxslider.min.js"></script>
 <script type="text/javascript"
 	src="homepage/js/jquery-scrolltofixed-min.js"></script>
-<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
-
+<script type="text/javascript" src="homepage/js/jquery.jcarousel.min.js"></script>
+ 
+<!--  <script type='text/javascript' src="js/modernizr.foundation.js"></script> -->
+<link rel="stylesheet" type="text/css"
+	media="only screen and (max-device-width: 560px)"
+	href="../homepage/stylesheets/mediaqueries.css"> 
+	<link rel="stylesheet" type="text/css"
+	media="only screen and (max-device-width: 950px)"
+	href="../homepage/stylesheets/mediaqueries.css"> 
 <script> 
   $(document).ready(function() {
   $('#carousel_wrapper').bxSlider({

@@ -7,7 +7,7 @@
 		<a href="http://dionpapas.com"><img class="logo"
 			src="../homepage/images/logo_8.png" /> </a>
 		<div id="main_menu">
-
+		<nav>
 			<ul>
 				<li class="first_list"><a href="../homepage/resume.php"
 					class="main_menu_first">about me</a></li>
@@ -28,7 +28,7 @@
 				<li class="first_list"><a href="../homepage/contact.php"
 					class="main_menu_first">Say Hello!</a></li>
 			</ul>
-
+			</nav>
 		</div>
 		<!-- END #main_menu -->
 

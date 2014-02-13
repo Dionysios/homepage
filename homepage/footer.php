@@ -1,8 +1,6 @@
 
 <div id="footer">
-
 	<div class="container">
-
 		<div id="footer_about" class="footer_info">
 		<div class="footer_personal">
 			<h4>Personal</h4>

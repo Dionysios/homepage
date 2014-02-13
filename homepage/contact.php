@@ -17,13 +17,14 @@ $subject = 'Hello';
 } 
 ?>
 
-<head>
+<!-- <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 <link rel="stylesheet" type="text/css" href="stylesheets/reset.css" />
 <link rel="stylesheet" type="text/css" href="stylesheets/main.css" />
 
-</head>
+</head> -->
+<? include("header.php"); ?>
 <body>
 
 	<? include("header_div.php"); ?>
@@ -108,7 +109,7 @@ $subject = 'Hello';
 	</div>
 	<!-- END #main_content -->
 
-	<? include("footer.php");?>
 
+	<? include("footer.php");?>
 </body>
 </html>

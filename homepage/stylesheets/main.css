@@ -7,7 +7,16 @@ body {
 	margin: auto;
 	width: 1000px;
 }
-.container{
+
+.container {
+	
+}
+
+#wrapper {
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	padding: 2%;
 }
 
 .bold_text {
@@ -23,20 +32,22 @@ body {
 
 /* ----- Header Styling ----- */
 .header {
-    position:fixed; 
-    z-index:10000;   
-	margin:auto; 
-	width:100%; 
+	position: fixed;
+	z-index: 10000;
+	margin: auto;
+	width: 100%;
 	background: #e8ebf1;
 	height: 100px;
 }
 
-.main_content{
+.main_content {
+	width: 100%;
+}
 
+.bx-wrapper_slideshow {
+	margin-top: 100px;
 }
-.bx-wrapper_slideshow{
- 	margin-top:100px; 
-}
+
 h1 {
 	float: left;
 	margin-top: 37px;
@@ -56,8 +67,9 @@ h1 a {
 	font-weight: bold;
 	font-family: 'Lucida calligraphy', arial, 'sans serif';
 }
+
 .logo {
-	margin-top:25px;
+	margin-top: 25px;
 }
 
 #logo2 {
@@ -219,7 +231,7 @@ h1 a {
 
 .mid_content_info a {
 	color: #2aacc8;
-	float:left;
+	float: left;
 }
 
 .mid_content_info a img {
@@ -274,8 +286,8 @@ h1 a {
 }
 
 #carousel_wrapper {
- 	border-top: 1px solid #dfe1e5;
-	border-bottom: 1px solid #dfe1e5; 
+	border-top: 1px solid #dfe1e5;
+	border-bottom: 1px solid #dfe1e5;
 	/* border-style:1px solid #fff; */
 	clear: left;
 	height: 220px;
@@ -767,7 +779,7 @@ a#pagination_next:hover,a#pagination_end:hover {
 
 #skype_button {
 	background: url(../images/skype_icon.png) no-repeat;
-	height:52px;
+	height: 52px;
 	width: 55px;
 }
 
@@ -903,25 +915,21 @@ p#copyright {
 #slideshow_pagination a.current {
 	background: url(../images/white_button.png) no-repeat;
 }
+.footer_personal {
+	text-align: left;
+}
 
-#fieldset {
-	
-}
-.footer_personal{
-text-align: left;
-}
-#spring_text{
-text-align: left;
+#spring_text {
+	text-align: left;
 }
 
 /* IMAGE CAPTIONS */
-
 .bx-wrapper .bx-caption {
 	position: absolute;
 	bottom: 0;
 	left: 0;
- 	background: #666\9;
-	background: rgba(80, 80, 80, 0.75); 
+	background: #666\9;
+	background: rgba(80, 80, 80, 0.75);
 	width: 100%;
 }
 
@@ -929,7 +937,7 @@ text-align: left;
 	color: #fff;
 	font-family: Arial;
 	display: block;
-/* 	font-size: .85em; */
+	/* 	font-size: .85em; */
 	font-size: 1.15em;
 	padding: 10px;
 }

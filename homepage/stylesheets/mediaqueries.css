@@ -1,0 +1,52 @@
+
+#header,footer {
+	width: 920px;
+}
+
+.main_content {
+	width: 920px;
+}
+
+.container,#latest_works,#bottom_content,#download {
+	width: 920px;
+}
+
+.mid_content_info {
+	float: left;
+	font-size: 13px;
+	margin-top: 60px;
+	width: 195px;
+}
+
+#bx-wrapper {
+	width: 195px;
+}
+
+#bx-viewport {
+	width: 920px;
+}
+
+#carousel_wrapper li,#portfolio_list li {
+	height: 160px;
+	position: relative;
+	width: 195px;
+}
+
+#contact_info_left {
+	float: left;
+	margin: 27px 0 33px 0;
+	width: 450px;
+}
+/* #contact_form {
+width: 420px;
+}  */
+#contact_form input {
+	width: 530px;
+}
+
+.main_menu_first {
+	font-size: 18px;
+}
+#contact_area {
+	height:auto;
+}

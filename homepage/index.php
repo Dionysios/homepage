@@ -1,3 +1,4 @@
+
 <?php include_once("header.php") ?>
 <?  require_once('functions.php');
 
@@ -7,6 +8,7 @@ saveIp($ip);
 ?>
 
 <body>
+<!-- <div id="wrapper">  -->
 	<?php //include_once("homepage/analytics.php") ?>
 	<? include_once("homepage/header_div.php"); 
 	
@@ -200,5 +202,6 @@ saveIp($ip);
 	<!-- END #main_content -->
 
 	<? include("homepage/footer.php");?>
-</body>
+	
+	</body>
 </html>
