@@ -3,8 +3,16 @@
 <?  require_once('functions.php');
 
 $ip = getRealIp();
+$type = checkIfSpider();
+$agent = getHttpUserAgent();
+$referrer = getHttpReferer();
 // echo $ip;
-saveIp($ip);
+
+//$location_info = get_location_info($ip);
+
+//echo ($location_info);
+
+saveIp($ip,$type,$agent,$referer);
 ?>
 
 <body>
