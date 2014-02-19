@@ -168,7 +168,8 @@ h1 a {
 #slideshow_area {
 	background: #81e4ed url(../images/banner_shadow.png) repeat-x;
 	border-top: 1px solid #6ec2ca;
-	padding: 19px 0 45px 0;
+	/* padding: 19px 0 45px 0; */
+	padding: 45px 0 45px 0;
 }
 
 #cv_area {
@@ -596,6 +597,7 @@ a#pagination_next:hover,a#pagination_end:hover {
 	float: left;
 	margin: 27px 0 33px 0;
 	width: 574px;
+	text-align: left;
 }
 
 #contact_info p {
