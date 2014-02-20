@@ -19,7 +19,7 @@
 			<ul>
 				<li class="footer_main_links"><a href="../homepage/resume.php">CV</a>
 				</li>
-				<li class="footer_main_links"><a href="">Projects</a></li>
+			<!-- 	<li class="footer_main_links"><a href="">Projects</a></li> -->
 				<li class="footer_main_links"><a href="../homepage/contact.php">Say
 						Hello!</a></li>
 			</ul>

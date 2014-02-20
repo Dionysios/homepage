@@ -1,6 +1,7 @@
 <?php
+use GeoIp2\Database\Reader;
 
-function saveIp($ip,$type,$agent,$referer){
+function saveIp($ip,$country,$city,$type,$agent,$referer){
 	include_once("global.php");
 	if ($ip != $homeserver){
 		$link =  mysql_connect( $hostname , $username, $password);
@@ -10,15 +11,15 @@ function saveIp($ip,$type,$agent,$referer){
 		// echo 'Connected successfully';
 
 		mysql_select_db($dbname);
-		$order = "INSERT INTO visitors(ip,type,agent,referrer)
+		$order = "INSERT INTO visitors(ip,country,city,type,agent,referrer)
 		VALUES
-		('$ip','$type','$agent','$referer')";
+		('$ip','$country','$city','$type','$agent','$referer')";
 
 		$result = mysql_query($order);	//order executes
 		if($result){
-			//		echo("<br>Input data is succeed");
+			//	echo("<br>Input data is succeed");
 		} else{
-			//		echo("<br>Input data is fail");
+			//	echo("<br>Input data is fail");
 		}
 		mysql_close($link);
 	}
@@ -33,64 +34,6 @@ function getRealIp() {
 		$ip=$_SERVER['REMOTE_ADDR'];
 	}
 	return $ip;
-}
-
-function get_location_info($ip){
-
-	// this function looks up location info from the maxmind geoip database
-	// and returns $country_info array
-	global $path_visitor_maps;
-
-	// lookup country info for this ip
-	// geoip lookup
-
-	require_once($path_visitor_maps.'include-whos-online-geoip.php');
-
-	$gi = geoip_open_VMWO($path_visitor_maps.'GeoLiteCity.dat', VMWO_GEOIP_STANDARD);
-
-	$record = GeoIP_record_by_addr_VMWO($gi, $ip);
-	geoip_close_VMWO($gi);
-
-	$location_info = array();    // Create Result Array
-
-	$location_info['provider']     = '';
-	$location_info['city_name']    = (isset($record->city)) ? $record->city : '';
-	$location_info['state_name']   = (isset($record->country_code) && isset($record->region)) ? $GEOIP_REGION_NAME[$record->country_code][$record->region] : '';
-	$location_info['state_code']   = (isset($record->region)) ? strtoupper($record->region) : '';
-	$location_info['country_name'] = (isset($record->country_name)) ? $record->country_name : '--';
-	$location_info['country_code'] = (isset($record->country_code)) ? strtoupper($record->country_code) : '--';
-	$location_info['latitude']     = (isset($record->latitude)) ? $record->latitude : '0';
-	$location_info['longitude']    = (isset($record->longitude)) ? $record->longitude : '0';
-
-	// this fixes accent characters on UTF-8, only when the blog charset is set to UTF-8
-	if ( strtolower(get_option('blog_charset')) == 'utf-8' && function_exists('utf8_encode') ) {
-		if ($location_info['city_name'] != '' ) {
-			$location_info['city_name'] = utf8_encode($location_info['city_name']);
-		}
-		if ($location_info['state_name'] != '') {
-			$location_info['state_name'] = utf8_encode($location_info['state_name']);
-		}
-		if ($location_info['country_name'] != '') {
-			$location_info['country_name'] = utf8_encode($location_info['country_name']);
-		}
-	}
-
-	return $location_info;
-}
-
-/* function checkIf Spider  */
-function is_bot($agent) {
-
-	$spiders = file("/var/www/homepage/robots.txt");
-	$string = implode('|',$spiders);
-
-	$pos = strpos( $string, $agent);
-
-	if ($pos === false) {
-		return false;
-	} else {
-		return true;
-	}
 }
 
 // Get the visitors user_agent
@@ -116,6 +59,38 @@ function getHttpReferer() {
 		$referer = '';
 	}
 	return $referer;
+}
+
+function get_location_info($ipAddress) {
+
+	require_once 'vendor/autoload.php';
+
+	// This creates the Reader object, which should be reused across
+	// lookups.
+	$reader = new Reader('/var/www/homepage/vendor/geoip2/geoip2/maxmind-db/GeoLite2-City.mmdb');
+
+	// Replace "city" with the appropriate method for your database, e.g.,
+	// "country".
+	//$record = $reader->city('128.101.101.101');
+	//$record = $reader->country('128.101.101.101');
+	$record = $reader->cityIspOrg($ipAddress);
+	$record = $reader->country($ipAddress);
+	$record = $reader->city($ipAddress);
+
+	return $record;
+}
+/* function checkIf Spider  */
+function is_bot($agent) {
+
+if ( $spiders = file('/var/www/homepage/bots.txt') ) {
+	for ($i=0, $n=sizeof($spiders); $i<$n; $i++) {
+		if ( is_integer(strpos($agent, trim($spiders[$i]))) ) {
+			//break;
+			return true;
+		}
+	}
+}
+return false;
 }
 
 ?>

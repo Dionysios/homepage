@@ -32,12 +32,13 @@
 <script type="text/javascript" src="homepage/js/jquery.jcarousel.min.js"></script>
  
 <!--  <script type='text/javascript' src="js/modernizr.foundation.js"></script> -->
-<link rel="stylesheet" type="text/css"
+ <link rel="stylesheet" type="text/css"
 	media="only screen and (max-device-width: 560px)"
 	href="../homepage/stylesheets/mediaqueries.css"> 
 	<link rel="stylesheet" type="text/css"
 	media="only screen and (max-device-width: 950px)"
 	href="../homepage/stylesheets/mediaqueries.css"> 
+	
 <script> 
   $(document).ready(function() {
   $('#carousel_wrapper').bxSlider({
@@ -67,5 +68,8 @@
 	});
 </script>
 </script>
-<?php include_once("homepage/analytics.php") ?>
+<?php include_once("homepage/analytics.php");
+	//display errors
+ini_set('display_errors', 'On');
+?>
 </head>

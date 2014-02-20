@@ -6,20 +6,22 @@ $ip = getRealIp();
 $agent = getHttpUserAgent();
 $referrer = getHttpReferer();
 
-if (!is_bot($agent)) {
+  if (is_bot($agent) === true) {
 	$type = "Bot";
-	$agent = "CheckThisOne  ".$agent;
+//	$agent = "CheckThisOne  ".$agent;
 }
 else {
 	$type = "human";
-}
+} 
+ 
+$location_info = get_location_info($ip);
+$country = (string) $location_info ->country->name ;
+$city = (string) $location_info ->city->name;
 
+/* echo $country;
+echo $city; */
+saveIp($ip,$country, $city,$type,$agent,$referrer);
 
-//$location_info = get_location_info($ip);
-
-//echo ($location_info);
-
-saveIp($ip,$type,$agent,$referrer);
 ?>
 
 <body>
