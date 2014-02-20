@@ -3,23 +3,30 @@
 <?  require_once('functions.php');
 
 $ip = getRealIp();
-$type = checkIfSpider();
 $agent = getHttpUserAgent();
 $referrer = getHttpReferer();
-// echo $ip;
+
+if (!is_bot($agent)) {
+	$type = "Bot";
+	$agent = "CheckThisOne  ".$agent;
+}
+else {
+	$type = "human";
+}
+
 
 //$location_info = get_location_info($ip);
 
 //echo ($location_info);
 
-saveIp($ip,$type,$agent,$referer);
+saveIp($ip,$type,$agent,$referrer);
 ?>
 
 <body>
-<!-- <div id="wrapper">  -->
+	<!-- <div id="wrapper">  -->
 	<?php //include_once("homepage/analytics.php") ?>
 	<? include_once("homepage/header_div.php"); 
-	
+
 	?>
 
 	<div id="main_content">
@@ -28,31 +35,32 @@ saveIp($ip,$type,$agent,$referer);
 
 			<div class="container">
 				<div class="bx-wrapper_slideshow">
-				<ul id="slider2">
-					<li><a href="/homepage/resume.php"><img
-							src="homepage/images/banner_image.jpg" width="1000px"
-							height="440px"
-							title="Applications developement in Java, Java EE, Spring, Hibernate and more..." />
-					</a></li>
-					<li><a href="/homepage/resume.php"><img
-							src="homepage/images/test3.jpg" width="1000px" height="440px" />
-					</a></li>
-					<li><a href="/homepage/resume.php"><img
-							src="homepage/images/android.jpg" width="1000px" height="440px" />
-					</a></li>
-				</ul>
+					<ul id="slider2">
+						<li><a href="/homepage/resume.php"><img
+								src="homepage/images/banner_image.jpg" width="1000px"
+								height="440px"
+								title="Applications developement in Java, Java EE, Spring, Hibernate and more..." />
+						</a></li>
+						<li><a href="/homepage/resume.php"><img
+								src="homepage/images/test3.jpg" width="1000px" height="440px" />
+						</a></li>
+						<li><a href="/homepage/resume.php"><img
+								src="homepage/images/android.jpg" width="1000px" height="440px" />
+						</a></li>
+					</ul>
+				</div>
+				<div id="slideshow_pagination">
+					<ul>
+						<li><a data-slide-index="0" href="#" class="slideshow_pagination"></a>
+						</li>
+						<li><a data-slide-index="1" href="#" class="slideshow_pagination"></a>
+						</li>
+						<li><a data-slide-index="2" href="#" class="slideshow_pagination"></a>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<div id="slideshow_pagination">
-				<ul>
-					<li><a data-slide-index="0" href="#" class="slideshow_pagination"></a>
-					</li>
-					<li><a data-slide-index="1" href="#" class="slideshow_pagination"></a>
-					</li>
-					<li><a data-slide-index="2" href="#" class="slideshow_pagination"></a>
-					</li>
-				</ul>
-			</div>
-			</div><!-- END .wrapperr -->
+			<!-- END .wrapperr -->
 		</div>
 		<!-- END .container -->
 	</div>
@@ -210,6 +218,6 @@ saveIp($ip,$type,$agent,$referer);
 	<!-- END #main_content -->
 
 	<? include("homepage/footer.php");?>
-	
-	</body>
+
+</body>
 </html>

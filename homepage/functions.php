@@ -2,7 +2,6 @@
 
 function saveIp($ip,$type,$agent,$referer){
 	include_once("global.php");
-
 	if ($ip != $homeserver){
 		$link =  mysql_connect( $hostname , $username, $password);
 		if (!$link) {
@@ -79,35 +78,35 @@ function get_location_info($ip){
 	return $location_info;
 }
 
-function checkIfSpider(){
-	$spiders = file("/var/www/homepage/spiders.txt");
-	$test = in_array($_SERVER['HTTP_USER_AGENT'], $spiders);
+/* function checkIf Spider  */
+function is_bot($agent) {
 
-	if ($test == true) {
-		$type = 'Spider';
+	$spiders = file("/var/www/homepage/robots.txt");
+	$string = implode('|',$spiders);
+
+	$pos = strpos( $string, $agent);
+
+	if ($pos === false) {
+		return false;
+	} else {
+		return true;
 	}
-	else {
-		// is not a bot, must be a regular visitor
-		$type = 'Guest';
-	}
-	return $type;
 }
 
-
+// Get the visitors user_agent
 function getHttpUserAgent() {
-	// determine the visitors user agent (browser)
 	if (getenv('HTTP_USER_AGENT')) {
 		$agent = getenv('HTTP_USER_AGENT');
 	} else if (isset($_SERVER['HTTP_USER_AGENT'])) {
 		$agent = $_SERVER['HTTP_USER_AGENT'];
 	} else {
-		$agent = 'unknown';
+		//	$agent = 'Check for bot'.$agent;
 	}
 	return $agent;
 }
 
+// Get the visitors http referer
 function getHttpReferer() {
-	// determine the visitors http referer (url they clicked on to get to your site)
 	if (getenv('HTTP_REFERER')) {
 		$referer = getenv('HTTP_REFERER');
 	} else if (isset($_SERVER['HTTP_REFERER'])) {
@@ -118,4 +117,5 @@ function getHttpReferer() {
 	}
 	return $referer;
 }
+
 ?>
