@@ -82,15 +82,18 @@ function get_location_info($ipAddress) {
 /* function checkIf Spider  */
 function is_bot($agent) {
 
-if ( $spiders = file('/var/www/homepage/bots.txt') ) {
+$spiders = file('/var/www/homepage/bots.txt'); 
+	
+	if(is_null($agent) == true){
+		return true;
+	}	
 	for ($i=0, $n=sizeof($spiders); $i<$n; $i++) {
 		if ( is_integer(strpos($agent, trim($spiders[$i]))) ) {
 			//break;
 			return true;
-		}
+		}		
+		return false;
 	}
-}
-return false;
 }
 
 ?>

@@ -8,7 +8,7 @@ $referrer = getHttpReferer();
 
   if (is_bot($agent) === true) {
 	$type = "Bot";
-//	$agent = "CheckThisOne  ".$agent;
+	$agent = "CheckThisOne  ".$agent;
 }
 else {
 	$type = "human";
