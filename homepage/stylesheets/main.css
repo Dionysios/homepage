@@ -38,6 +38,7 @@ body {
 	width: 100%;
 	background: #e8ebf1;
 	height: 100px;
+	border-bottom: 1px solid #d9d9d9;
 }
 
 .main_content {
@@ -289,11 +290,10 @@ h1 a {
 #carousel_wrapper {
 	border-top: 1px solid #dfe1e5;
 	border-bottom: 1px solid #dfe1e5;
-	/* border-style:1px solid #fff; */
 	clear: left;
 	height: 220px;
+	vertical-align:top;
 }
-
 #carousel_wrapper li {
 	float: left;
 	margin: 30px 15px;
@@ -301,13 +301,13 @@ h1 a {
 
 /* ----- Carousel and Portfolio Styling ----- */
 #carousel_wrapper li,#portfolio_list li {
-	height: 160px;
-	position: relative;
+ 	position: relative; 
+ 	height: 200px;
 	width: 220px;
 }
 
 #carousel_wrapper li a img,#portfolio_list li a img {
-	position: absolute;
+ 	position: absolute;
 	top: 80px;
 	right: 0%;
 	visibility: hidden;
@@ -695,9 +695,8 @@ a#pagination_next:hover,a#pagination_end:hover {
 	background: #e8ebf1;
 	border-top: 1px solid #d9d9d9;
 	clear: both;
-	height: 320px; <!--
+	height: 320px; 
 	margin-top: 40px;
-	-->
 }
 
 #footer p,#footer a {
