@@ -79,8 +79,8 @@ function get_location_info($ipAddress) {
 
 	return $record;
 }
-/* function checkIf Spider  */
-function is_bot($agent) {
+/* function to check if bot is spider based on file parameters*/
+/* function is_bot($agent) {
 
 $spiders = file('/var/www/homepage/bots.txt'); 
 	
@@ -94,6 +94,20 @@ $spiders = file('/var/www/homepage/bots.txt');
 		}		
 		return false;
 	}
+} */
+
+/* function checkIf Spider  */
+function is_bot($agent) {
+
+	$spiders = file('/var/www/homepage/bots.txt');
+
+	if(is_null($agent) == true){
+		return true;
+	}
+	elseif (strpos($agent, 'bot') !== false ) {
+		return true;	
+	}
+	else return false;
 }
 
 ?>
