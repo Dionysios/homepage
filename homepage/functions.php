@@ -99,15 +99,18 @@ $spiders = file('/var/www/homepage/bots.txt');
 /* function checkIf Spider  */
 function is_bot($agent) {
 
-	$spiders = file('/var/www/homepage/bots.txt');
-
+//	$spiders = file('/var/www/homepage/bots.txt');
+	$spiders = array('bot','Contact','@','Experiment','slurp');
+	
+	foreach($spiders as $spider) {
 	if(is_null($agent) == true){
 		return true;
 	}
-	elseif (strpos($agent, 'bot') !== false ) {
+	elseif (strpos($agent,$spider) !== false ) {
 		return true;	
 	}
 	else return false;
+	}
 }
 
 ?>
