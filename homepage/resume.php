@@ -89,28 +89,28 @@
 									<h2>Technical</h2>
 								</div>
 								<div class="yui-u">
-									<ul class="talent">
-										<li class="cv">PHP</li>
-										<li class="cv">Jquery</li>
-										<li class="cv">Erlang</li>
-										<li class="cv">Apache</li>
-										<li class="last">Javascript</li>
-									</ul>
 
 									<ul class="talent">
-										<li class="cv">Java</li>
+										<li class="cv">Java EE</li>
 										<li class="cv">Spring</li>
 										<li class="cv">Hibernate</li>
 										<li class="cv">Mysql / Couchdb</li>
 										<li class="last">CVS / Subversion</li>
 									</ul>
+									<ul class="talent">
+										<li class="cv">PHP</li>
+										<li class="cv">Jquery</li>
+										<li class="cv">Erlang</li>
+										<li class="cv">Apache / Tomcat</li>
+										<li class="last">Javascript</li>
+									</ul>
 
 									<ul class="talent">
 										<li class="cv">Git / Github</li>
-										<li class="cv">OS X</li>
-										<li class="cv">Windows /Server</li>
-										<li class="cv">Networks /VPN</li>
 										<li class="last">Linux</li>
+										<li class="cv"> VPN/ Networks</li>
+										<li class="cv">Windows /Server</li>
+										<li class="cv">OS X</li>
 									</ul>
 								</div>
 							</div>
@@ -125,6 +125,15 @@
 
 								<div class="yui-u">
 
+								<div class="job">
+										<h2>Vinnter</h2>
+										<h3>Web/mobile developer</h3>
+										<h4>2014/03/28-2014/05/30</h4>
+										<p>Thesis project. Android IOS and web developer for a custom mobile, bluetooth low energy cms
+										More details can be found<a id="emailtome" href="http://www.vinnter.se/News/2014/01/20/Master-Thesis--Smartphone-apps-and-Bluetooth-40" target="_blank"> here </a>
+										</p>
+									</div>
+									
 									<div class="job">
 										<h2>Volvo IT</h2>
 										<h3>Java Applications developer</h3>
